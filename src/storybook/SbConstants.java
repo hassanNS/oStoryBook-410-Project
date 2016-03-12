@@ -148,6 +148,7 @@ public class SbConstants {
 		ru_RU, //Russian
 		cs_CZ, //Czech
 		zh_CN, //Simplified Chinese
+		ar_EG, //Arabic
 		pl_PL; //Polish
 		public String getI18N() {
 			return I18N.getMsg("msg.common.language." + name());
@@ -209,6 +210,9 @@ public class SbConstants {
 				case zh_CN:
 					locale = new Locale("zh", "CN");
 					break;
+				case ar_EG:
+					locale = new Locale("ar", "EG");
+					break;
 				case pl_PL:
 					locale = new Locale("pl", "PL");
 					break;
@@ -220,7 +224,7 @@ public class SbConstants {
 	};
 
 	public static enum Spelling {
-		none, en_US, de_DE, es_ES, it_IT, fr_FR, ru_RU, nl_NL, pl_PL;
+		none, en_US, de_DE, es_ES, it_IT, fr_FR, ru_RU, nl_NL, pl_PL, ar_EG;
 		public String getI18N() {
 			if (this == none)
 				return I18N.getMsg("msg.pref.spelling.no");
@@ -229,7 +233,7 @@ public class SbConstants {
 	}
 
 	public static enum SpellingToGet {
-		en_US, de_DE, es_ES, it_IT, fr_FR, ru_RU, nl_NL, pl_PL;
+		en_US, de_DE, es_ES, it_IT, fr_FR, ru_RU, nl_NL, pl_PL, ar_EG;
 		public String getI18N() {
 		//	if (this == none)
 		//		return I18N.getMsg("msg.pref.spelling.no");
