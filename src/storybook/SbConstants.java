@@ -129,6 +129,7 @@ public class SbConstants {
 		}
 	}
 
+	//List of Languages
 	public static enum Language {
 		en_US, //USA english
 		de_DE, //German
@@ -153,6 +154,8 @@ public class SbConstants {
 		public String getI18N() {
 			return I18N.getMsg("msg.common.language." + name());
 		}
+		
+		//Languages mapped to locations
 		public Locale getLocale() {
 			Locale locale;
 			switch (this) {
